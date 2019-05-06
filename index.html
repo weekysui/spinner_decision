@@ -20,30 +20,16 @@
         
     }
     
-    #chart{
-        position:absolute;
-        /* width:500px; */
-        /* height:1500px; */
-        /* top:0; */
-        left:100px;
-    }
-    #question{
-        position: absolute;
-        width:400px;
-        height:1200px;
-        top:0;
-        left:620px;
-    }
     #question h2{
         font-size: 20px;
         font-weight: bold;
         color: palevioletred;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        position: absolute;
-        padding: 0;
+        /* position: absolute; */
+        padding: 10;
         margin: 0;
         top:50%;
-        right:5%;
+        /* right:5%; */
         -webkit-transform:translate(0,-50%);
                 transform:translate(0,-50%);
     }
@@ -63,15 +49,23 @@
 <body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container" id ="box" style="text-align: center;">
-            <h1  style="font-weight: bolder;"class="display-4">男神老公<span class="fa fa-heart-o"></span></h1>
+            <h1 style="font-weight: bolder;"class="display-4">男神老公<span class="fa fa-heart-o"></span></h1>
             <!-- <h2  style="font-weight:bold;" class="lead">女神老婆饿了！！！</h2> -->
             <button type="button" style="font-weight:bold; font-size: 20pt" class="btn btn-danger">我们今天吃啥？</button>
         </div>
     </div>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <div class="container">
-        <div id="chart"></div>
-        <div id="question"><h2></h2></div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" id="chart" style="left: 25%"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center"id="question"><h2></h2></div>
+        </div>
+            
+       
+        
     </div>
             
    
