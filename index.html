@@ -20,7 +20,7 @@
         
     }
     
-    #question h2{
+    #question a{
         font-size: 20px;
         font-weight: bold;
         color: palevioletred;
@@ -74,8 +74,9 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center"id="question"><h2></h2></div>
+            <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center"id="question"><a></a></div>
         </div>  
+        <br>
         <div id="floating-panel">
                 <b>Start: </b>
                 <select id="start">
@@ -233,8 +234,9 @@
                     //mark question as seen
                     d3.select(".slice:nth-child(" + (picked + 1) + ") path");
                     //populate question
-                    d3.select("#question h2")
-                        .text(data[picked].question);
+                    d3.select("#question a")
+                        .attr("href","https://maps.google.com/?q="+data[picked].question)
+                        .text(data[picked].question); 
                     oldrotation = rotation;
                 
                     container.on("click", spin);
